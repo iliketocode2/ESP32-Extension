@@ -1,0 +1,23 @@
+{
+  "name": "ESP32-Extension",
+  "displayName": "PyScript Sender",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.60.0" },
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pyscript.sendCode",
+        "title": "Send to PyScript"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "pyscript.sendCode",
+        "key": "ctrl+shift+u",
+        "mac": "cmd+shift+u"
+      }
+    ]
+  }
+}
