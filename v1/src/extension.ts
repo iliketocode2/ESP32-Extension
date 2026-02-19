@@ -153,7 +153,7 @@ function getWebviewContent(): string {
 <div class="url-bar">
   <label>URL:</label>
   <input id="urlInput" type="text"
-    value="https://chrisrogers.pyscriptapps.com/talking-on-spike/latest/"
+    value="https://chrisrogers.pyscriptapps.com/talking-on-a-channel/latest/"
     onkeydown="if(event.key==='Enter') loadIframe()"
   />
   <button class="secondary" onclick="loadIframe()">↵ Go</button>
