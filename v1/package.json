@@ -1,0 +1,29 @@
+{
+  "name": "spike-serial",
+  "displayName": "SPIKE Serial Monitor",
+  "description": "Embeds the PyScript serial REPL for SPIKE/ESP32 in VS Code",
+  "version": "0.1.0",
+  "publisher": "your-name",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "spike-serial.open",
+        "title": "SPIKE: Open Serial Monitor"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
