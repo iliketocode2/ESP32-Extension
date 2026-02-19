@@ -1,0 +1,29 @@
+{
+  "name": "spike-serial-repl",
+  "displayName": "Serial REPL (ESP32 / MicroPython)",
+  "description": "Built-in serial REPL to connect to ESP32 and other devices—no iframe, serial from extension host",
+  "version": "0.1.0",
+  "publisher": "your-name",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "spike-serial-repl.open", "title": "Serial REPL: Open Monitor" }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "serialport": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
